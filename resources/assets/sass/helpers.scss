@@ -1,0 +1,51 @@
+
+// Container
+.container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+@media only screen and (min-width: $small-screen){
+	.container {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (min-width: $medium-screen){
+	.container {
+		max-width: 70%;
+	}
+}
+
+
+//Hide and Show
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+// Fonts
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.6rem;
+}
+h4 {
+	font-size: 1.3rem;
+}
+p {
+	font-size: 1.2rem;
+}

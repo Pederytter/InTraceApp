@@ -1,0 +1,56 @@
+
+// Body
+$body-bg: #e6e6e6;
+
+// Brands
+$primary: #f19b3b;
+$info: #a6c2ff;
+$success: #42b129;
+$warning: #f3be83;
+$danger: #e02323;
+
+// Colors
+$black: #333;
+$white: #fff;
+$dark-grey: #272727;
+
+// Typography
+@font-face {
+	font-family: Heebo;
+    src: url(fonts/Heebo-Regular.ttf);
+}
+
+$font-family-sans-serif: "Heebo", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+
+// Navbar
+$navbar-default-bg: #333;
+
+// Buttons
+$btn-default-color: $black;
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+//Screens
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+// Cols
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+// Shadow
+$shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);

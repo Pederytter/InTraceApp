@@ -1,0 +1,150 @@
+// Variables
+@import "variables";
+@import "helpers";
+@import "grid";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	background-color: $body-bg;
+}
+
+img  {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+// Main container calc 
+.main {
+	// padding-left:200px;
+	width: calc(100% - 200px);
+	float: right;
+	display: flex;
+}
+
+
+// Navigationsbar
+.mainNav {
+	background-color: $black;
+	box-shadow: $shadow;
+	ul{
+		li {
+			list-style-type:none;
+			display: inline-block;
+			a {
+				color: $white;
+				padding: 20px;
+				display: block;
+				text-decoration: none;
+				&:hover {
+					background-color: $dark-grey;
+				}
+				img {
+					max-width: 30px;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				span {
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.dropDownRight {
+			float:right;
+		}
+	}
+
+}
+
+ul.dropDown {
+	display: none;
+	background-color: $black;
+	position: absolute;
+	z-index: 1000000;
+	li {
+		display: block;
+		span, i {
+			display: inline-block;
+		}
+		i {
+			font-size: 1.2rem;
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+}
+
+
+
+a.dropDownButton {
+	cursor: pointer;
+	span, img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	img {
+		max-width: 20px;
+		border-radius: 50%;
+	}
+}
+
+// Project Navigation
+
+.projectNav {
+	position: fixed;
+	height: 100%;
+	width: 200px;
+	background-color: $black; 
+	box-shadow: $shadow;
+	h2 {
+		color: $white;
+		font-size: 1.5rem;
+		padding-left:15px;
+	}
+	ul {
+		li {
+
+			a {
+				color: $white;
+				text-decoration: none;
+				padding: 5px 0px 0px 15px;
+				display: block;
+				&:hover {
+					background: $primary;
+				}
+				&:active {
+					background: $primary;
+				}
+				&:focus {
+					background: $primary;
+				}
+
+			}
+			.active {
+				background: $primary;
+			}
+		}
+	}
+
+}
+
+
+.box {
+	background-color: $white;
+	box-shadow: $shadow;
+	margin: 1%;
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+	}
+}
