@@ -31636,7 +31636,7 @@ var Component = __webpack_require__(35)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\wamp64\\www\\InTrace\\WebApp\\resources\\assets\\js\\components\\Example.vue"
+Component.options.__file = "C:\\wamp\\www\\InTrace\\InTraceApp\\resources\\assets\\js\\components\\Example.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -31647,9 +31647,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-cb8a084e", Component.options)
+    hotAPI.createRecord("data-v-592f2cb6", Component.options)
   } else {
-    hotAPI.reload("data-v-cb8a084e", Component.options)
+    hotAPI.reload("data-v-592f2cb6", Component.options)
   }
 })()}
 
@@ -31734,7 +31734,7 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-cb8a084e", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-592f2cb6", module.exports)
   }
 }
 
@@ -31744,7 +31744,7 @@ if (false) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process, global) {/*!
- * Vue.js v2.2.4
+ * Vue.js v2.2.3
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
@@ -33867,9 +33867,8 @@ function mountComponent (
   if (process.env.NODE_ENV !== 'production' && config.performance && mark) {
     updateComponent = function () {
       var name = vm._name;
-      var id = vm._uid;
-      var startTag = "vue-perf-start:" + id;
-      var endTag = "vue-perf-end:" + id;
+      var startTag = "start " + name;
+      var endTag = "end " + name;
 
       mark(startTag);
       var vnode = vm._render();
@@ -35408,7 +35407,7 @@ function initMixin (Vue) {
   Vue.prototype._init = function (options) {
     /* istanbul ignore if */
     if (process.env.NODE_ENV !== 'production' && config.performance && mark) {
-      mark('vue-perf-init');
+      mark('init');
     }
 
     var vm = this;
@@ -35449,8 +35448,8 @@ function initMixin (Vue) {
     /* istanbul ignore if */
     if (process.env.NODE_ENV !== 'production' && config.performance && mark) {
       vm._name = formatComponentName(vm, false);
-      mark('vue-perf-init-end');
-      measure(((vm._name) + " init"), 'vue-perf-init', 'vue-perf-init-end');
+      mark('init end');
+      measure(((vm._name) + " init"), 'init', 'init end');
     }
 
     if (vm.$options.el) {
@@ -35862,7 +35861,7 @@ Object.defineProperty(Vue$3.prototype, '$isServer', {
   get: isServerRendering
 });
 
-Vue$3.version = '2.2.4';
+Vue$3.version = '2.2.3';
 
 /*  */
 

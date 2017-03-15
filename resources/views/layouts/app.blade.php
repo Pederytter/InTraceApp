@@ -67,8 +67,52 @@
                 </ul>
             </nav>
         </header>
+{{--     <nav class="projectNav">
+        <ul>
+            <li>
+                <a href="" class="active">
+                    Mærsk
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Ikea
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Mega langt projektnavn
+                </a>
+            </li>
+        </ul>
+    </nav> --}}
+    <nav class="projectNav">
+        <ul>
+            <li><img src="images/InTraceLogo.png"></li>
+            <li>
+                <a href="#" class="active">
+                    <span><img src="images/plan.svg"></span>
+                    <span>Plan</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="images/home.svg"></span>
+                    <span>Rapporter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="images/plan.svg"></span>
+                    <span>Projekter</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
         @yield('content')
     </div>
+
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
