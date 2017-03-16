@@ -88,24 +88,38 @@
     </nav> --}}
     <nav class="projectNav">
         <ul>
-            <li><img src="images/InTraceLogo.png"></li>
+            <li class="topLogo"><img src="images/InTraceLogo.png"></li>
             <li>
                 <a href="#" class="active">
-                    <span><img src="images/plan.svg"></span>
+                    {{-- <span><img src="images/plan.svg"></span> --}}
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
                     <span>Plan</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <span><img src="images/home.svg"></span>
+                    {{-- <span><img src="images/home.svg"></span> --}}
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
                     <span>Rapporter</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <span><img src="images/plan.svg"></span>
+                    {{-- <span><img src="images/plan.svg"></span> --}}
+                    <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                     <span>Projekter</span>
                 </a>
+            </li>
+        </ul>
+        <ul class="navBottom">
+            <li>
+                <a href="#">
+                    {{-- <span><img src="images/plan.svg"></span> --}}
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Min profil</span>
+                </a>
+            </li>
+            <li>
             </li>
         </ul>
     </nav>

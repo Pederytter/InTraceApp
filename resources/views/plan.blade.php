@@ -22,10 +22,10 @@
         </ul>
     </aside> --}}
     <main class="main">
-        <section class="box col s6 tasks">
+        <section class="box col s8 tasks">
             <h1>Mærsk</h1>
         </section>
-        <section class="box col s6 timer">
+        <section class="box col s4 timer">
             <section class="timerTop">
                 <div>
                     <h2>Agenda</h2>

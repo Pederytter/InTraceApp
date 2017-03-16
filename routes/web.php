@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/plan', function () {
     return view('plan');
 });
+Route::get('/profile', function () {
+    return view('profile');
+});
 
 Auth::routes();
 
